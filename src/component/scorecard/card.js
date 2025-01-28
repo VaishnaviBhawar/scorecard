@@ -13,8 +13,8 @@ function Scorecards({ score, increaseScore, decreaseScore, teamName, winner }) {
       <h3 className='text-8xl text-center text-red-900 mt-[20px] mb-[20px]'>{score}</h3>
       {!winner && (
         <div className='flex justify-around mt-[20px] mb-[20px]'>
-          <Button onClick={decreaseScore} className='' icon={faUserPlus} />
-          <Button onClick={increaseScore} className='' icon={faUserMinus} />
+          <Button onClick={decreaseScore} className='' icon={faUserMinus} />
+          <Button onClick={increaseScore} className='' icon={faUserPlus} />
         </div>
       )}
     </div>
